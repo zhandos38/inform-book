@@ -13,28 +13,27 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="form-login">
     <div class="heading-login">
-        <label>Log in</label> <a href="<?= Url::to(['site/sign-up']) ?>">Sign Up</a>
+        <label>Войти</label> <a href="<?= Url::to(['site/signup']) ?>">Зарегистрироватся</a>
     </div>
     <div>
 
         <?php $form = ActiveForm::begin([
             'id' => 'login-form',
-            'layout' => 'horizontal',
             'fieldConfig' => [
                 'template' => "{label}\n<div class='form-group'>{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
                 'labelOptions' => ['class' => 'col-lg-1 control-label'],
             ],
         ]); ?>
 
-        <?= $form->field($model, 'username')->textInput(['placeholder' => 'username'])->label(false) ?>
+        <?= $form->field($model, 'username')->textInput(['placeholder' => 'Логин'])->label(false) ?>
 
-        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'password'])->label(false) ?>
+        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Пароль'])->label(false) ?>
 
-        <?= $form->field($model, 'rememberMe')->checkbox() ?>
+        <?= $form->field($model, 'rememberMe')->checkbox()->label('Запомни меня') ?>
 
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">
-                <?= Html::submitButton('Login', ['class' => 'login-btn', 'name' => 'login-button']) ?>
+                <?= Html::submitButton('Войти', ['class' => 'login-btn', 'name' => 'login-button']) ?>
             </div>
         </div>
 

@@ -33,8 +33,10 @@ AppAsset::register($this);
     </div>
     <div class="login-right-wrapper">
         <div class="login-right-inner">
-            <h1>VedhaDocs is the <span>Key to your</span><span>Success</span><span>Ensure Consent</span><span>expectations</span></h1>
-            <p>Documentation help ensure consent and expectations. It helps to tell the narrative for decisions made, and how yourself or the client responded to different situations. In this same manor, it is important to record information that can help support the proper treatment plan and the reasoning for such services</p>
+            <h1>ИНФОРМАТИКАНЫ АҒЫЛШЫН ТІЛІНДЕ АРАЛАС ОҚЫТУ МОДЕЛІН ҚОЛДАНУ</h1>
+            <p>ҚАЗАҚСТАН РЕСПУБЛИКАСЫ БІЛІМ ЖӘНЕ ҒЫЛЫМ МИНИСТРЛІГІ <br>
+                ОҢТҮСТІК ҚАЗАҚСТАН МЕМЛЕКЕТТІК ПЕДАГОГИКАЛЫҚ
+                УНИВЕРСИТЕТІ</p>
         </div>
     </div>
 </section>

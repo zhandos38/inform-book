@@ -6,34 +6,36 @@
 
 use yii\helpers\Html;
 use yii\bootstrap4\ActiveForm;
+use yii\helpers\Url;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="form-login">
     <div class="heading-login">
-        <label>Sign Up</label> <a href="<?= \yii\helpers\Url::to(['site/login']) ?>">Log in</a>
+        <label>Зарегистрироватся</label> <a href="<?= Url::to(['site/login']) ?>">Войти</a>
     </div>
     <div>
 
         <?php $form = ActiveForm::begin([
-            'id' => 'login-form',
-            'layout' => 'horizontal',
+            'id' => 'signup-form',
             'fieldConfig' => [
                 'template' => "{label}\n<div class='form-group'>{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
                 'labelOptions' => ['class' => 'col-lg-1 control-label'],
             ],
         ]); ?>
 
-        <?= $form->field($model, 'username')->textInput(['placeholder' => 'username'])->label(false) ?>
+        <?= $form->field($model, 'username')->textInput(['placeholder' => 'Логин'])->label(false) ?>
 
-        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'password'])->label(false) ?>
+        <?= $form->field($model, 'email')->textInput(['placeholder' => 'email'])->label(false) ?>
 
-        <?= $form->field($model, 'rememberMe')->checkbox() ?>
+        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Пароль'])->label(false) ?>
+
+        <?= $form->field($model, 'password_repeat')->passwordInput(['placeholder' => 'Повторите пароль'])->label(false) ?>
 
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">
-                <?= Html::submitButton('Login', ['class' => 'login-btn', 'name' => 'login-button']) ?>
+                <?= Html::submitButton('Signup', ['class' => 'login-btn', 'name' => 'login-button']) ?>
             </div>
         </div>
 

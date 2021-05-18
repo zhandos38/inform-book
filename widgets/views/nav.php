@@ -1,3 +1,8 @@
+<?php
+
+use yii\helpers\Url;
+
+?>
 <div class="doc-head-section">
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-light with-sidebar">
@@ -9,14 +14,14 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="index-2.html">Main page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index-2.html">Басты бет</a></li>
                     <!-- end of nav-item -->
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            My profile
+                            Профиль
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="layout.html">Выйти</a>
+                            <a class="dropdown-item" href="<?= Url::to(['site/logout']) ?>">Выйти</a>
                         </div>
                         <!-- end of dropdown-menu -->
                     </li>
@@ -27,7 +32,7 @@
   =============================-->
                 <form class="form-inline my-2 my-lg-0">
                     <div class="search-wrapper">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Іздеу" aria-label="Search">
                     </div>
                 </form>
                 <!-- end of search-wrapper -->
