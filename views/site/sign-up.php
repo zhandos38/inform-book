@@ -6,14 +6,13 @@
 
 use yii\helpers\Html;
 use yii\bootstrap4\ActiveForm;
-use yii\helpers\Url;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="form-login">
     <div class="heading-login">
-        <label>Log in</label> <a href="<?= Url::to(['site/sign-up']) ?>">Sign Up</a>
+        <label>Sign Up</label> <a href="<?= \yii\helpers\Url::to(['site/login']) ?>">Log in</a>
     </div>
     <div>
 
