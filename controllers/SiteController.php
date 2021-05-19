@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Session;
 use app\models\SignupForm;
 use Yii;
 use yii\filters\AccessControl;
@@ -79,6 +80,11 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            $session = new Session();
+            $session->user_id = Yii::$app->user->getId();
+            $session->enter_time = date('Y-m-d H:i:s');
+            $session->save();
+
             return $this->goBack();
         }
 

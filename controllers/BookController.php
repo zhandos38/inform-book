@@ -4,6 +4,8 @@
 namespace app\controllers;
 
 
+use app\models\Task;
+use Yii;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
@@ -30,7 +32,15 @@ class BookController extends Controller
 
     public function actionPage1()
     {
-        return $this->render('page1');
+        $model = new Task();
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            Yii::$app->session->setFlash('Задача успешно отправлен');
+            return $this->redirect(['site/index']);
+        }
+
+        return $this->render('page1', [
+            'model' => $model
+        ]);
     }
 
     public function actionPage2()
