@@ -1,6 +1,6 @@
 <?php
 
-use app\models\Task;
+use app\models\Session;
 use yii\helpers\Html;
 use yii\grid\GridView;
 
@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             [
                 'attribute' => 'user_id',
-                'value' => function(Task $model) {
+                'value' => function(Session $model) {
                     return $model->user ? $model->user->username : 'Не указано';
                 }
             ],
