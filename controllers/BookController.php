@@ -62,4 +62,29 @@ class BookController extends Controller
     {
         return $this->render('page7');
     }
+
+    public function actionPage8()
+    {
+        return $this->render('page8');
+    }
+
+    public function actionPage9()
+    {
+        return $this->render('page9');
+    }
+
+    public function actionPage10()
+    {
+        return $this->render('page10');
+    }
+
+    public function actionPage11()
+    {
+        return $this->render('page11');
+    }
+
+    public function actionPage12()
+    {
+        return $this->render('page12');
+    }
 }

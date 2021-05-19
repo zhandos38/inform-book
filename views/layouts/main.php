@@ -51,9 +51,14 @@ AppAsset::register($this);
                     <li class="side-list"><a href="<?= Url::to(['book/page2']) ?>">Types of operating system</a></li>
                     <li class="side-list"><a href="<?= Url::to(['book/page3']) ?>">Encryption</a></li>
                     <li class="side-list"><a href="<?= Url::to(['book/page4']) ?>">Software</a></li>
-                    <li class="side-list"><a href="<?= Url::to(['book/page5']) ?>">The Internet</a></li>
-                    <li class="side-list"><a href="<?= Url::to(['book/page6']) ?>">Algorithms. Flowchart</a></li>
-                    <li class="side-list"><a href="<?= Url::to(['book/page7']) ?>">Programming techniques</a></li>
+                    <li class="side-list"><a href="<?= Url::to(['book/page5']) ?>">Main memory</a></li>
+                    <li class="side-list"><a href="<?= Url::to(['book/page6']) ?>">Networks</a></li>
+                    <li class="side-list"><a href="<?= Url::to(['book/page7']) ?>">Database</a></li>
+                    <li class="side-list"><a href="<?= Url::to(['book/page8']) ?>">Algorithms</a></li>
+                    <li class="side-list"><a href="<?= Url::to(['book/page9']) ?>">The Internet</a></li>
+                    <li class="side-list"><a href="<?= Url::to(['book/page10']) ?>">Algorithms. Flowchart</a></li>
+                    <li class="side-list"><a href="<?= Url::to(['book/page11']) ?>">Cyber security</a></li>
+                    <li class="side-list"><a href="<?= Url::to(['book/page12']) ?>">Programming techniques</a></li>
                 </ul>
             </div>
             <!-- sidebar-menu  -->
@@ -81,19 +86,6 @@ AppAsset::register($this);
                 <?= $content ?>
             </div>
             <!-- end of content-section -->
-            <!--=============================
-            right-nav
-            =============================-->
-            <div class="right-nav nav">
-                <nav>
-                    <a href="#quick_start">Quick Start</a>
-                    <a href="#why_build">Why Build Tools</a>
-                    <a href="#recipes">Recipes</a>
-                    <a href="#glossary">Glossary</a>
-                    <a href="#folder_strtr">Folder Stucture</a>
-                </nav>
-            </div>
-            <!-- end of right-nav -->
         </div>
         <!-- end of main-content -->
 
