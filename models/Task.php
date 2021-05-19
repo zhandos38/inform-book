@@ -10,7 +10,7 @@ use Yii;
  * @property int $id
  * @property int|null $user_id
  * @property string|null $topic
- * @property string|null $file
+ * @property string|null $answer
  * @property string|null $created_at
  *
  * @property User $user
@@ -33,7 +33,7 @@ class Task extends \yii\db\ActiveRecord
         return [
             [['user_id'], 'integer'],
             [['created_at'], 'safe'],
-            [['topic', 'file'], 'string', 'max' => 255],
+            [['topic', 'answer'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
@@ -45,10 +45,10 @@ class Task extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_id' => 'User ID',
-            'topic' => 'Topic',
-            'file' => 'File',
-            'created_at' => 'Created At',
+            'user_id' => 'Пользователь',
+            'topic' => 'Тақырып',
+            'answer' => 'Жауап',
+            'created_at' => 'Время',
         ];
     }
 

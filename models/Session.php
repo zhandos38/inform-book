@@ -42,8 +42,8 @@ class Session extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'user_id' => 'User ID',
-            'enter_time' => 'Enter Time',
+            'user_id' => 'Пользователь',
+            'enter_time' => 'Время',
         ];
     }
 

@@ -18,7 +18,7 @@ class m210519_111947_create_task_table extends Migration
             'id' => $this->primaryKey(),
             'user_id' => $this->integer(),
             'topic' => $this->string(),
-            'file' => $this->string(),
+            'answer' => $this->string(),
             'created_at' => $this->dateTime()
         ]);
 

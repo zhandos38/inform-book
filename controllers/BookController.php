@@ -32,15 +32,7 @@ class BookController extends Controller
 
     public function actionPage1()
     {
-        $model = new Task();
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            Yii::$app->session->setFlash('Задача успешно отправлен');
-            return $this->redirect(['site/index']);
-        }
-
-        return $this->render('page1', [
-            'model' => $model
-        ]);
+        return $this->render('page1');
     }
 
     public function actionPage2()

@@ -16,3 +16,7 @@
 <p>AR technology is quickly coming into the mainstream. It is used to display score overlays on telecasted sports games and pop out 3D emails, photos or text messages on mobile devices. Leaders of the tech industry are also using AR to do amazing and revolutionary things with holograms and motion activated commands.</p>
 <p>&nbsp;<strong>Augmented Reality vs. Virtual Reality</strong></p>
 <p>Augmented reality and virtual reality are inverse reflections of one in another with what each technology seeks to accomplish and deliver for the user. Virtual reality offers a digital recreation of a real-life setting, while augmented reality delivers virtual elements as an overlay to the real world.</p>
+<hr>
+<div>
+    <?= \app\widgets\AnswerWidget::widget() ?>
+</div>

@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Session;
 use app\models\SignupForm;
+use app\models\Task;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -157,5 +158,20 @@ class SiteController extends Controller
     public function actionPage2()
     {
         return $this->render('page2');
+    }
+
+    public function actionAnswer()
+    {
+        $model = new Task();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->user_id = Yii::$app->user->getId();
+            $model->created_at = date('Y-m-d H:i:s');
+            $model->save();
+
+            Yii::$app->session->setFlash('Задача успешно отправлен');
+            return $this->redirect(['site/index']);
+        }
+
+        return false;
     }
 }
