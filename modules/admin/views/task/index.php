@@ -1,5 +1,6 @@
 <?php
 
+use app\models\Task;
 use yii\helpers\Html;
 use yii\grid\GridView;
 
@@ -20,7 +21,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'user_id',
+            [
+                'attribute' => 'user_id',
+                'value' => function(Task $model) {
+                    return $model->user ? $model->user->username : 'Не указано';
+                }
+            ],
             'topic',
             'answer:ntext',
             'created_at',
