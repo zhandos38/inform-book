@@ -15,3 +15,7 @@
     <li>Local variables only exist within a particular&nbsp;subroutine.</li>
 </ol>
 <p>&nbsp;</p>
+<hr>
+<div>
+    <?= \app\widgets\AnswerWidget::widget() ?>
+</div>

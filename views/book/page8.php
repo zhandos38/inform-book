@@ -23,3 +23,7 @@
     <li><strong>TETMTSEAN&nbsp;=&nbsp;STATEMENT</strong></li>
     <li><strong>LARABVEI&nbsp;=&nbsp;VARIABLE</strong></li>
 </ol>
+<hr>
+<div>
+    <?= \app\widgets\AnswerWidget::widget() ?>
+</div>

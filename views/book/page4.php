@@ -42,3 +42,7 @@
     <li>You can try it for a while for free. Then if you want to keep using it, you are expected to pay a small <strong>fee</strong> to the writer.</li>
     <li>You can use it for free for a while (often a month). When the <strong>trial</strong> <strong>period</strong> finishes, you have to pay, or the program will <strong>de-activate</strong>.</li>
 </ol>
+<hr>
+<div>
+    <?= \app\widgets\AnswerWidget::widget() ?>
+</div>

@@ -21,3 +21,7 @@
         <p>&nbsp;</p>
     </li>
 </ol>
+<hr>
+<div>
+    <?= \app\widgets\AnswerWidget::widget() ?>
+</div>

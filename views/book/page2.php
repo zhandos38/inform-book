@@ -135,3 +135,7 @@
     </tbody>
 </table>
 <p>&nbsp;</p>
+<hr>
+<div>
+    <?= \app\widgets\AnswerWidget::widget() ?>
+</div>
