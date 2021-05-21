@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="form-login">
     <div class="heading-login">
-        <label>Зарегистрироватся</label> <a href="<?= Url::to(['site/login']) ?>">Войти</a>
+        <label>Тіркелу</label> <a href="<?= Url::to(['site/login']) ?>">Кіру</a>
     </div>
     <div>
 
@@ -29,13 +29,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <?= $form->field($model, 'email')->textInput(['placeholder' => 'email'])->label(false) ?>
 
-        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Пароль'])->label(false) ?>
+        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Құпия сөз'])->label(false) ?>
 
-        <?= $form->field($model, 'password_repeat')->passwordInput(['placeholder' => 'Повторите пароль'])->label(false) ?>
+        <?= $form->field($model, 'password_repeat')->passwordInput(['placeholder' => 'Құпия сөзді қайталаңыз'])->label(false) ?>
 
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">
-                <?= Html::submitButton('Зарегистрироватся', ['class' => 'login-btn', 'name' => 'login-button']) ?>
+                <?= Html::submitButton('Тіркелу', ['class' => 'login-btn', 'name' => 'login-button']) ?>
             </div>
         </div>
 

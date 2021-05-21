@@ -27,7 +27,7 @@ AppAsset::register($this);
 <section class="login-wrapper">
     <div class="login-left-wrapper">
         <div class="login-content-inner-wrapper">
-            <h3>ЮКГПУ</h3>
+            <h3>ОҚМПУ</h3>
             <?= $content ?>
         </div>
     </div>

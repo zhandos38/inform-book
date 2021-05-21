@@ -2193,4 +2193,6 @@ footer.semantic-footer ul li a
   }
 
 
-
+.side-list a {
+  font-size: 18px !important;
+}

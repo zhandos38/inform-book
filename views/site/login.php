@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="form-login">
     <div class="heading-login">
-        <label>Войти</label> <a href="<?= Url::to(['site/signup']) ?>">Зарегистрироватся</a>
+        <label>Кіру</label> <a href="<?= Url::to(['site/signup']) ?>">Тіркелу</a>
     </div>
     <div>
 
@@ -27,13 +27,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <?= $form->field($model, 'username')->textInput(['placeholder' => 'Логин'])->label(false) ?>
 
-        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Пароль'])->label(false) ?>
+        <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Құпия сөз'])->label(false) ?>
 
-        <?= $form->field($model, 'rememberMe')->checkbox()->label('Запомни меня') ?>
+        <?= $form->field($model, 'rememberMe')->checkbox()->label('Мені есіңде сақта') ?>
 
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">
-                <?= Html::submitButton('Войти', ['class' => 'login-btn', 'name' => 'login-button']) ?>
+                <?= Html::submitButton('Кіру', ['class' => 'login-btn', 'name' => 'login-button']) ?>
             </div>
         </div>
 

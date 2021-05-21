@@ -34,7 +34,7 @@ AppAsset::register($this);
     <nav id="sidebar" class="sidebar-wrapper">
         <div class="sidebar-content">
             <div class="sidebar-brand">
-                <a href="/">ЮКГПУ</a>
+                <a href="/">ОҚМПУ</a>
                 <div id="close-sidebar">
                     <i class="ti-close"></i>
                 </div>
